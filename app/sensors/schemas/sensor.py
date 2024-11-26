@@ -15,6 +15,11 @@ class SensorCreate(SensorBase):
     pass
 
 
+class SensorAverageValue(SQLModel):
+    equipmentId: str
+    average_value: Decimal = Field(decimal_places=2)
+
+
 class Sensor(SensorBase):
     class Config:
         from_attributes = True
