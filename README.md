@@ -27,7 +27,7 @@ EQ-12499 | 2023-02-11T01:30:00.000-04:00 | 65.33
 
 As informações de fuso horário são mantidas e convertidas para UTC-5, comportamento padrão do FastAPI ao lidar com strings ISO 8601 válidas contendo informações de fuso-horário.
 
-Para visitar o repositório do projeto Front End que consome esta API, clique <a href="" target="_blank">aqui</a>.
+Para visitar o repositório do projeto Front End que consome esta API, clique <a href="https://github.com/zaquinn/sensors_monitoring_frontend" target="_blank">aqui</a>.
 
 Tecnologias utilizadas:
 - [Python](https://www.python.org/)
