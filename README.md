@@ -214,5 +214,6 @@ Você pode rodar os testes do projeto com o comando:
 docker build -f Dockerfile.tests -t sensors_tests . && docker run --rm sensors_tests
 ```
 
+É necessário possuir o <a href="https://www.docker.com/" target="_blank">Docker</a> instalado na sua máquina.
 
 [ Voltar para o topo ](#tabela-de-conteúdos)
