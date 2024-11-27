@@ -4,6 +4,7 @@
   - [1. Visão Geral](#1-visão-geral)
   - [2. Endpoints](#2-endpoints)
   - [3. Como rodar o projeto](#3-como-rodar-o-projeto)
+  - [4. Como rodar os testes](#4-como-rodar-os-testes)
 
 ---
 ## 1. Visão Geral
@@ -201,5 +202,17 @@ docker compose up
 ```
 
 É necessário possuir o <a href="https://www.docker.com/" target="_blank">Docker</a> instalado na sua máquina.
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+---
+## 4. Como rodar os testes
+
+Você pode rodar os testes do projeto com o comando:
+
+```bash
+docker build -f Dockerfile.tests -t sensors_tests . && docker run --rm sensors_tests
+```
+
 
 [ Voltar para o topo ](#tabela-de-conteúdos)
