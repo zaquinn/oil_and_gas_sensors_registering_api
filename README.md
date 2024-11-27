@@ -3,6 +3,7 @@
 ## Tabela de Conteúdos
   - [1. Visão Geral](#1-visão-geral)
   - [2. Endpoints](#2-endpoints)
+  - [3. Como rodar o projeto](#3-como-rodar-o-projeto)
 
 ---
 ## 1. Visão Geral
@@ -38,8 +39,6 @@ Tecnologias utilizadas:
 - [PostgreSQL](https://www.postgresql.org/docs/)
 - [Docker](https://docs.docker.com/)
 - [Uv](https://docs.astral.sh/uv/)
-
-Url base da aplicação:
 
 ---
 ## 2. Endpoints
@@ -193,3 +192,14 @@ Content-type: application/json
 [ Voltar para Endpoints ](#2-endpoints)
 
 ---
+## 3. Como rodar o projeto
+
+Você pode rodar o projeto com o comando:
+
+```bash
+docker compose up
+```
+
+É necessário possuir o <a href="https://www.docker.com/" target="_blank">Docker</a> instalado na sua máquina.
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
