@@ -1,6 +1,8 @@
 from datetime import datetime
 from decimal import Decimal
+from typing import ClassVar
 
+from pydantic import ConfigDict
 from sqlmodel import Field, SQLModel
 
 
@@ -21,5 +23,4 @@ class SensorAverageValue(SQLModel):
 
 
 class Sensor(SensorBase):
-    class Config:
-        from_attributes = True
+    Config: ClassVar[ConfigDict] = ConfigDict(from_attributes=True)
