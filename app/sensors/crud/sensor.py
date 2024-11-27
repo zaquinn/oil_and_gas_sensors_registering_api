@@ -35,7 +35,6 @@ async def create_sensors_from_csv(db: Session, file: UploadFile) -> list[Sensor]
     sensors = []
     for _, row in df.iterrows():
         sensor_data = row.to_dict()
-        print(sensor_data)
         sensor = Sensor.model_validate(sensor_data)
         db.add(sensor)
         sensors.append(sensor)

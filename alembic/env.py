@@ -1,3 +1,4 @@
+import os
 from logging.config import fileConfig
 
 from sqlalchemy import engine_from_config, pool
@@ -14,6 +15,13 @@ config = context.config
 # This line sets up loggers basically.
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
+
+# Get the database URL from the environment variable
+database_url = os.getenv(
+    "DATABASE_URL", "postgresql://postgres:123@localhost:5432/oil_gas_db"
+)
+config.set_main_option("sqlalchemy.url", database_url)
+
 
 # add your model's MetaData object here
 # for 'autogenerate' support
