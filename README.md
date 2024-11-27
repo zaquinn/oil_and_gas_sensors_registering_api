@@ -37,6 +37,7 @@ Tecnologias utilizadas:
 - [Pandas](https://pandas.pydata.org/docs/)
 - [PostgreSQL](https://www.postgresql.org/docs/)
 - [Docker](https://docs.docker.com/)
+- [Uv](https://docs.astral.sh/uv/)
 
 Url base da aplicação:
 
